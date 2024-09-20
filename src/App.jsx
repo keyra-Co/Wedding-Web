@@ -30,10 +30,15 @@ function App() {
 
   useEffect(() => {
     window.onload = () => {
-      setTimeout(() => {
-        setIsloading(false);
-      }, 3000);
+      setIsloading(false);
     };
+
+    const timeout = setTimeout(() => {
+      setIsloading(false);
+    }, 3500);
+
+    // Bersihkan timeout saat komponen di-unmount
+    return () => clearTimeout(timeout);
   }, []);
 
   useEffect(() => {});
