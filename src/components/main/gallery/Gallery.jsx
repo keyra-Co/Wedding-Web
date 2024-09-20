@@ -3,6 +3,7 @@ import './Gallery.css';
 
 import { dataImgLS, dataImgPT } from '../../../data/dataImgs';
 import { useImgSlider } from '../../../utils/sliderImg';
+import { useAnimate } from '../../../utils/observ';
 
 export default function Gallery() {
   return (
@@ -15,12 +16,14 @@ export default function Gallery() {
 }
 
 function GallerySlider() {
+  const setRef = useAnimate();
+
   const images = dataImgLS.map((image) => <ImageMainItem key={image.name} {...image} />);
   const { currentIndex } = useImgSlider(images);
 
   return (
-    <div className="gallery__main-slider autoDownScroll">
-      <div className="gallery__main-wrapper" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+    <div className="gallery__main-slider">
+      <div ref={setRef} className="gallery__main-wrapper hidden" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {images}
       </div>
     </div>
@@ -28,8 +31,14 @@ function GallerySlider() {
 }
 
 function GallerySlide() {
+  const setRef = useAnimate();
+
   const images = dataImgPT.map((image) => <ImageMainItem key={image.name} {...image} />);
-  return <div className="gallery__items-slide autoAppearScroll">{images}</div>;
+  return (
+    <div ref={setRef} className="gallery__items-slide hidden">
+      {images}
+    </div>
+  );
 }
 
 function ImageMainItem({ image, name }) {

@@ -22,9 +22,9 @@ function DetailEvent() {
       <DetailInfo title={'Hotel Gran Melia Jakarta'}>
         Jl. H. R. Rasuna Said No.Kav X, RW.0, Kuningan Tim., Kecamatan Setiabudi, Kota Jakarta Selatan
       </DetailInfo>
-      <button className="button-main btnw">
+      <a className="button-main btnw" href="https://maps.app.goo.gl/Ry6YTz4NaxCZ4r2k8" target="_blank">
         <i className="bi bi-geo-alt-fill"></i>Lihat Lokasi
-      </button>
+      </a>
     </div>
   );
 }

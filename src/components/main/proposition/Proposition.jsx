@@ -1,5 +1,7 @@
 import './Proposition.css';
 
+import { useAnimate } from '../../../utils/observ';
+
 export default function Proposition() {
   return (
     <section className="proposition section">
@@ -23,15 +25,17 @@ function Border() {
 }
 
 function Pictures() {
+  const setRef = useAnimate();
+
   return (
     <div className="pictures">
-      <div className="pictures__item autoLeftScroll fast">
+      <div ref={setRef} className="pictures__item hidden">
         <img className="item__img" src="images/6PT.jpg" alt="img 1" />
       </div>
-      <div className="pictures__item autoLeftScroll normal">
+      <div ref={setRef} className="pictures__item hidden">
         <img className="item__img" src="images/3PT.jpg" alt="img 2" />
       </div>
-      <div className="pictures__item autoLeftScroll">
+      <div ref={setRef} className="pictures__item hidden">
         <img className="item__img" src="images/5PT.jpg" alt="img 3" />
       </div>
     </div>

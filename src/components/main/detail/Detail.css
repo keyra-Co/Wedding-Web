@@ -21,6 +21,10 @@
     overflow: hidden;
 }
 
+.detail__wedding-info a {
+    text-decoration: none;
+}
+
 .detail__wedding-item {
     justify-content: center;
     display: flex;
