@@ -33,7 +33,7 @@ function GallerySlider() {
 function GallerySlide() {
   const setRef = useAnimate();
 
-  const images = dataImgPT.map((image) => <ImageMainItem key={image.name} {...image} />);
+  const images = dataImgPT.map((image) => <ImageItem key={image.name} {...image} />);
   return (
     <div ref={setRef} className="gallery__items-slide hidden">
       {images}
@@ -43,4 +43,7 @@ function GallerySlide() {
 
 function ImageMainItem({ imageLg, name }) {
   return <img src={`images/${imageLg}`} alt={name} className="gallery__image-item" />;
+}
+function ImageItem({ imageSm, name }) {
+  return <img src={`images/${imageSm}`} alt={name} className="gallery__image-item" />;
 }

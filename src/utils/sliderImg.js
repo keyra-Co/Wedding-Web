@@ -10,7 +10,7 @@ export function useImgSlider(images, isOpen = true) {
     if (isOpen) {
       interval = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
-      }, 3500);
+      }, 5000);
     }
 
     // Bersihkan interval saat komponen di-unmount atau ketika isOpen berubah menjadi false
