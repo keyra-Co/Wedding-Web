@@ -39,19 +39,19 @@ function App() {
     setIsPlaying(!isPlaying); // Ubah state
   };
 
-  const [isLoading, setIsLoading] = useState(true);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+  const [audioLoaded, setAudioLoaded] = useState(false);
 
   useEffect(() => {
-    // Listener untuk mendeteksi ketika halaman selesai dimuat
-    window.onload = () => {
-      setIsLoading(false);
-    };
+    const img = new Image();
+    img.src = 'images/3LS.jpg';
+    img.onload = () => setImagesLoaded(true);
 
-    // Cleanup listener ketika komponen di-unmount
-    return () => {
-      window.onload = null;
-    };
+    const audio = new Audio('assets/audio/videoplayback.opus');
+    audio.oncanplaythrough = () => setAudioLoaded(true);
   }, []);
+
+  const isLoading = !(imagesLoaded && audioLoaded);
 
   return (
     <>
@@ -70,10 +70,6 @@ function App() {
       )}
     </>
   );
-}
-
-{
-  /*  */
 }
 
 export default App;
