@@ -1,0 +1,83 @@
+.gift {
+    background-color: var(--clr-softGray);
+    background-size: cover;
+    background-position: top;
+    background-image: url('decorations/tulip-flower.svg');
+}
+
+.gift__wrapper {
+    color: var(--clr-navyBlue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(191, 193, 194, .5);
+    padding: var(--size-xl);
+    backdrop-filter: blur(5px);
+}
+
+.gift__icon {
+    width: var(--size-9xl);
+    height: var(--size-9xl);
+    filter: drop-shadow(3px 3px 1px var(--clr-navyBlue));
+}
+
+.gift__detail {
+    display: grid;
+    gap: var(--size-xl);
+    padding: var(--size-xl);
+}
+
+.gift__description {
+    text-align: center;
+    padding: 0 var(--size-xl);
+}
+
+.gift__btn {
+    width: 100%;
+    margin: var(--size-sm) 0;
+}
+
+
+/* xs */
+/* @media (min-width : 475px) {} */
+
+/* sm */
+@media (min-width : 640px) {
+
+    .gift__icon {
+        width: var(--size-9xl);
+        height: var(--size-9xl);
+    }
+
+    .gift__btn-wrapper {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+/* md */
+/* @media (min-width : 768px) {} */
+
+/* lg */
+@media (min-width : 1024px) {
+
+    .gift__icon {
+        width: var(--size-10xl);
+        height: var(--size-10xl);
+    }
+
+    .second-title {
+        font-size: var(--size-4xl);
+    }
+
+    .gift__detail {
+        gap: var(--size-2xl);
+        padding: var(--size-2xl);
+        font-size: var(--size-2xl);
+    }
+
+}
+
+/* xl */
+/* @media (min-width : 1280px) {} */

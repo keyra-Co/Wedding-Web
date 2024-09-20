@@ -1,0 +1,261 @@
+.about {
+    background-color: var(--clr-softDark);
+}
+
+.about__couple {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-base);
+}
+
+.couple {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    border-radius: 10px;
+    background-color: var(--clr-navyBlue);
+    color: var(--clr-softGray);
+}
+
+.ampersand {
+    font-size: var(--size-6xl);
+    margin: 0 auto;
+    font-family: "Lora", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.couple__img {
+    mask-image: url('decorations/asset (2).svg');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    object-fit: cover;
+    object-position: top;
+}
+
+.couple__description,
+.couple__name,
+.couple__parents {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-size: var(--size-sm);
+}
+
+.couple__description {
+    padding: var(--size-base) var(--size-xs);
+    text-transform: capitalize;
+}
+
+.couple__name {
+    font-size: var(--size-3xl);
+    font-family: "Playfair Display", system-ui;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+
+.couple__parents,
+.insta {
+    margin-top: 10px;
+}
+
+.couple__lastname,
+.couple__father,
+.couple__mother {
+    margin-top: -3px;
+}
+
+.insta {
+    text-decoration: none;
+    color: var(--clr-softDark);
+    transition: all .3s ease-in;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 3px 5px;
+    border-radius: 5px;
+    font-size: var(--size-sm);
+}
+
+.insta i {
+    color: transparent;
+    background: linear-gradient(#f9ce34, #ee2a7b, #6228d7);
+    background-clip: text;
+}
+
+/* xxs */
+@media (max-width : 420px) {
+    .about__couple {
+        gap: var(--size-sm);
+    }
+
+    .couple {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .couple__description,
+    .couple__name,
+    .couple__parents {
+        font-size: var(--size-xs);
+    }
+
+    .couple__description {
+        padding: var(--size-sm) var(--size-xxs);
+    }
+
+    .couple__parents,
+    .insta {
+        margin-top: 3px;
+    }
+
+    .couple__lastname,
+    .couple__father,
+    .couple__mother {
+        margin-top: -8px;
+    }
+
+    .couple__name {
+        font-size: var(--size-2xl);
+    }
+
+    .insta {
+        padding: 0px 5px;
+        font-size: var(--size-xs);
+    }
+}
+
+/* xs */
+@media (min-width : 475px) {
+
+    .couple__description,
+    .couple__name,
+    .couple__parents {
+        font-size: var(--size-base);
+    }
+
+    .couple__description {
+        padding: var(--size-base) var(--size-xs);
+    }
+
+    .couple__name {
+        font-size: var(--size-4xl);
+    }
+
+
+    .couple__parents,
+    .insta {
+        margin-top: var(--size-sm);
+    }
+
+    .insta {
+        padding: 3px 5px;
+        font-size: var(--size-base);
+    }
+}
+
+/* sm */
+@media (min-width : 640px) {
+    .ampersand {
+        font-size: var(--size-4xl);
+        margin: auto;
+    }
+
+    .about__couple {
+        flex-direction: row;
+    }
+
+    .about__couple {
+        gap: var(--size-xs);
+    }
+
+    .couple {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .couple__description,
+    .couple__name,
+    .couple__parents {
+        font-size: var(--size-xs);
+    }
+
+    .couple__description {
+        padding: var(--size-sm) var(--size-xxs);
+    }
+
+    .couple__parents,
+    .insta {
+        margin-top: 10px;
+    }
+
+    .couple__lastname,
+    .couple__father,
+    .couple__mother {
+        margin-top: -8px;
+    }
+
+    .couple__name {
+        font-size: var(--size-2xl);
+    }
+}
+
+/* md */
+@media (min-width : 768px) {
+    .ampersand {
+        font-size: var(--size-6xl);
+    }
+
+    .about__couple {
+        gap: var(--size-xl);
+    }
+
+    .couple__description,
+    .couple__name,
+    .couple__parents {
+        font-size: var(--size-sm);
+    }
+
+    .couple__parents,
+    .insta {
+        margin-top: var(--size-base);
+    }
+
+    .couple__name {
+        font-size: var(--size-3xl);
+    }
+
+    .insta {
+        padding: 3px 5px;
+        font-size: var(--size-base);
+    }
+}
+
+/* lg */
+@media (min-width : 1024px) {
+    .ampersand {
+        font-size: var(--size-8xl);
+    }
+
+    .about__couple {
+        gap: var(--size-4xl);
+    }
+
+    .couple__description,
+    .couple__name,
+    .couple__parents {
+        font-size: var(--size-xl);
+    }
+
+    .couple__parents,
+    .insta {
+        margin-top: var(--size-lg);
+    }
+
+    .couple__name {
+        font-size: var(--size-5xl);
+    }
+
+    .insta {
+        padding: 3px 15px;
+        font-size: var(--size-lg);
+    }
+}
+
+/* xl */
+/* @media (min-width : 1280px) {} */

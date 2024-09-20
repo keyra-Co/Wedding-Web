@@ -1,0 +1,166 @@
+/* Grow Blur Animation */
+.growBlur {
+    animation: growBlur 1s forwards ease-in;
+}
+
+@keyframes growBlur {
+    from {
+        transform: scale(0);
+        opacity: 0;
+        filter: blur(10px);
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+/* Grow Animation */
+.grow {
+    animation: grow 1s forwards ease-in;
+}
+
+@keyframes grow {
+    from {
+        transform: scale(.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Appear Scroll Animation */
+.autoAppearScroll {
+    animation: autoAppearScroll both;
+    animation-timeline: view(70% 10%);
+}
+
+@keyframes autoAppearScroll {
+    0% {
+        transform: scale(.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Left Scroll Animation */
+.autoLeftScroll {
+    animation: autoLeftScroll both;
+    animation-timeline: view(70% 5%);
+}
+
+@keyframes autoLeftScroll {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.autoDownScroll.normal,
+.autoLeftScroll.normal {
+    animation-timeline: view(75% 5%);
+}
+
+.autoDownScroll.fast,
+.autoLeftScroll.fast {
+    animation-timeline: view(80% 5%);
+}
+
+.autoDownScroll.verfast,
+.autoLeftScroll.veryfast {
+    animation-timeline: view(85% 5%);
+}
+
+.autoDownScroll.superfast,
+.autoLeftScroll.superfast {
+    animation-timeline: view(90% 5%);
+}
+
+
+.autoLeftScroll.slow,
+.autoDownScroll.slow {
+    animation-timeline: view(65% 5%);
+}
+
+.autoLeftScroll.veryslow,
+.autoDownScroll.autoDownScroll.verslow {
+    animation-timeline: view(60% 5%);
+}
+
+
+/* Right Scroll Animation */
+.autoRightScroll {
+    animation: autoRightScroll both;
+    animation-timeline: view(70% 5%);
+}
+
+@keyframes autoRightScroll {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Down Scroll Animation */
+.autoDownScroll {
+    animation: autoDownScroll both;
+    animation-timeline: view(70% 5%);
+}
+
+@keyframes autoDownScroll {
+    from {
+        opacity: 0;
+        transform: translateY(100%) scale(.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.scrollAnimation {
+    animation: scrollAnimation both;
+    animation-timeline: view(auto 50%);
+}
+
+@keyframes scrollAnimation {
+    from {
+        height: 0%;
+    }
+
+    to {
+        height: 87%;
+    }
+}
+
+/* Rotating */
+
+.autoRotate {
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(1turn);
+    }
+}

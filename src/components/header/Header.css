@@ -1,0 +1,138 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    color: var(--clr-softLight);
+    gap: var(--size-2xl);
+    text-transform: capitalize;
+    z-index: 999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    transition: all 1s ease-in-out;
+}
+
+.header.hide {
+    animation: hide 1s linear forwards;
+}
+
+@keyframes hide {
+    to {
+        transform: translateY(-100%);
+        display: none;
+    }
+}
+
+
+.header__bg-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+    filter: blur(.2px) contrast(1.2) brightness(.5);
+}
+
+.header__greet {
+    font-size: var(--size-xl);
+    text-shadow: 1px 1px 1px var(--clr-softDark);
+    letter-spacing: -.5px;
+}
+
+.header__guest {
+    font-size: var(--size-2xl);
+    font-weight: normal;
+}
+
+.header__body {
+    padding-bottom: var(--size-xl);
+}
+
+.header__title {
+    font-size: var(--size-4xl);
+    font-family: "Playfair Display SC", system-ui;
+}
+
+.header__btn-invite {
+    background-color: rgba(244, 244, 244, .9);
+    margin-top: var(--size-xl);
+    position: relative;
+}
+
+.header__btn-invite:hover {
+    background-color: #3A506B;
+    color: var(--clr-softLight);
+}
+
+.header__btn-invite:hover::before {
+    border-color: var(--clr-navyBlue);
+}
+
+.header__btn-invite::before {
+    content: '';
+    position: absolute;
+    width: 105%;
+    height: 130%;
+    border-radius: 10px;
+    border: 1.5px solid var(--clr-silver);
+    z-index: -1;
+    animation: borderAnimate 1s infinite alternate-reverse;
+}
+
+@keyframes borderAnimate {
+
+    to {
+        width: 100%;
+        border-radius: 5px;
+        height: 100%;
+    }
+}
+
+.header__btn-invite i {
+    color: var(--clr-navyBlue);
+    transition: .5s ease-in;
+}
+
+.header__btn-invite:hover i {
+    color: var(--clr-calmBlue);
+}
+
+/* xs */
+/* @media (min-width : 475px) {} */
+
+/* sm */
+/* @media (min-width : 640px) {} */
+
+/* md */
+/* @media (min-width : 768px) {} */
+
+/* lg */
+@media (min-width : 1024px) {
+    .header {
+        gap: var(--size-3xl);
+    }
+
+    .header__greet {
+        font-size: var(--size-2xl);
+    }
+
+    .header__btn-invite,
+    .header__guest {
+        font-size: var(--size-3xl);
+    }
+
+    .header__body {
+        padding-bottom: var(--size-2xl);
+    }
+
+    .header__title {
+        font-size: var(--size-6xl);
+    }
+}
+
+/* xl */
+/* @media (min-width : 1280px) {} */

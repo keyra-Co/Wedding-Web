@@ -1,0 +1,153 @@
+/* xs */
+/* @media (min-width : 475px) {} */
+
+/* sm */
+/* @media (min-width : 640px) {} */
+
+/* md */
+/* @media (min-width : 768px) {} */
+
+/* lg */
+/* @media (min-width : 1024px) {} */
+
+/* xl */
+/* @media (min-width : 1280px) {} */
+
+/* 2xl */
+/* @media (min-width : 1536px) {} */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+/* "Playfair Display SC", system-ui; */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* "Playfair Display", system-ui; */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* "Poppins", system-ui; */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* "Lora", system-ui; */
+
+
+.btnw {
+  padding: 3px 10px;
+  border-radius: 5px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: var(--size-xl);
+  transition: all .3s ease-in;
+}
+
+.button-main {
+  background-color: var(--clr-navyBlue);
+  color: var(--clr-softGray);
+  transition: all .3s ease-in-out;
+  border: 1.5px solid var(--clr-silver);
+}
+
+.button-main:hover {
+  color: var(--clr-navyBlue);
+  border: 1.5px solid var(--clr-navyBlue);
+  background-color: var(--clr-softGray);
+}
+
+.second-title {
+  font-family: "Playfair Display", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.section {
+  padding: var(--size-7xl) var(--size-4xl);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.modal {
+  color: var(--clr-navyBlue);
+}
+
+
+/* Audio */
+.audio-icon {
+  position: fixed;
+  bottom: var(--size-xl);
+  right: var(--size-xl);
+  width: var(--size-3xl);
+  height: var(--size-3xl);
+  z-index: 9;
+  font-size: var(--size-2xl);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.audio-icon i {
+  display: flex;
+  position: relative;
+}
+
+.audio-icon i.bi-vinyl-fill::after {
+  content: '';
+  position: absolute;
+  border: 1px solid white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  animation: growShrink 1s linear infinite;
+}
+
+@keyframes growShrink {
+  from {
+    width: var(--size-3xl);
+    height: var(--size-3xl);
+  }
+
+  to {
+    width: calc(var(--size-5xl) - 5px);
+    height: calc(var(--size-5xl) - 5px);
+  }
+}
+
+
+
+/* xs */
+/* @media (min-width : 475px) {} */
+
+/* sm */
+@media (min-width : 640px) {
+  .second-title {
+    font-size: var(--size-3xl);
+  }
+}
+
+/* md */
+@media (min-width : 768px) {
+  .second-title {
+    font-size: var(--size-4xl);
+  }
+
+  .audio-icon {
+    width: var(--size-4xl);
+    height: var(--size-4xl);
+    font-size: var(--size-3xl);
+  }
+}
+
+/* lg */
+@media (min-width : 1024px) {
+  .second-title {
+    font-size: var(--size-5xl);
+  }
+
+}
+
+/* xl */
+/* @media (min-width : 1280px) {} */

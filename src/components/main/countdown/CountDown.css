@@ -1,0 +1,90 @@
+.countDown {
+    margin: var(--size-7xl) 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-image: url('images/1LS.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: var(--size-10xl) 0 var(--size-xl) 0;
+}
+
+.countDown__item-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    gap: var(--size-xl);
+}
+
+.countDown__title {
+    text-transform: lowercase;
+}
+
+.countDown__item {
+    background-color: var(--clr-navyBlue);
+    padding: var(--size-3xl);
+    width: var(--size-5xl);
+    height: var(--size-5xl);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.countDown__time {
+    font-size: var(--size-2xl);
+    font-family: 'Lora', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.countDown__time-name {
+    font-size: var(--size-xs);
+}
+
+/* xs */
+/* @media (min-width : 475px) {} */
+
+/* sm */
+/* @media (min-width : 640px) {} */
+
+/* md */
+@media (min-width : 768px) {
+    .countDown__item-wrapper {
+        gap: var(--size-2xl);
+    }
+
+    .countDown__item {
+        padding: var(--size-2xl);
+        width: var(--size-8xl);
+        height: var(--size-8xl);
+    }
+
+    .countDown__time {
+        font-size: var(--size-3xl);
+    }
+
+    .countDown__time-name {
+        font-size: var(--size-base);
+    }
+}
+
+/* lg */
+@media (min-width : 1024px) {
+    .countDown__item-wrapper {
+        gap: var(--size-4xl);
+    }
+
+    .countDown__item {
+        padding: var(--size-3xl);
+    }
+
+    .countDown__time {
+        font-size: var(--size-4xl);
+    }
+
+    .countDown__time-name {
+        font-size: var(--size-xl);
+    }
+}
+
+/* xl */
+/* @media (min-width : 1280px) {} */
