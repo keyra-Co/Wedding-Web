@@ -30,13 +30,13 @@ function Pictures() {
   return (
     <div className="pictures">
       <div ref={setRef} className="pictures__item hidden">
-        <img className="item__img" src="images/6PT.jpg" alt="img 1" />
+        <img className="item__img" src="images/6PT400.jpg" alt="img 1" />
       </div>
       <div ref={setRef} className="pictures__item hidden">
-        <img className="item__img" src="images/3PT.jpg" alt="img 2" />
+        <img className="item__img" src="images/3PT400.jpg" alt="img 2" />
       </div>
       <div ref={setRef} className="pictures__item hidden">
-        <img className="item__img" src="images/5PT.jpg" alt="img 3" />
+        <img className="item__img" src="images/5PT400.jpg" alt="img 3" />
       </div>
     </div>
   );
