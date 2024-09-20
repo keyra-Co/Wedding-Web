@@ -39,35 +39,13 @@ function App() {
     setIsPlaying(!isPlaying); // Ubah state
   };
 
-  const [imagesLoaded, setImagesLoaded] = useState(false);
-  const [audioLoaded, setAudioLoaded] = useState(false);
-
-  useEffect(() => {
-    const img = new Image();
-    img.src = 'images/3LS.jpg';
-    img.onload = () => setImagesLoaded(true);
-
-    const audio = new Audio('assets/audio/videoplayback.opus');
-    audio.oncanplaythrough = () => setAudioLoaded(true);
-  }, []);
-
-  const isLoading = !(imagesLoaded && audioLoaded);
-
   return (
     <>
-      {isLoading ? (
-        <div className="loading-screen">
-          <p>Loading...</p>
-        </div>
-      ) : (
-        <>
-          <Header onPlay={togglePlay} isOpen={toggle} onOpen={handleToggle} />
-          <Main onBtn={setData} isOpen={toggle} />
-          <Footer />
-          <Modal data={data} />
-          <Audio audioRef={audioRef} onPlay={togglePlay} isPlaying={isPlaying} />
-        </>
-      )}
+      <Header onPlay={togglePlay} isOpen={toggle} onOpen={handleToggle} />
+      <Main onBtn={setData} isOpen={toggle} />
+      <Footer />
+      <Modal data={data} />
+      <Audio audioRef={audioRef} onPlay={togglePlay} isPlaying={isPlaying} />
     </>
   );
 }
