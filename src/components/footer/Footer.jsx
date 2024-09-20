@@ -12,7 +12,7 @@ export default function Footer() {
       <p className="copyright-song">
         <a href="https://youtu.be/i8fa3JIrgpY?si=UWRK_f8ykD8SYjJ3">At My Worst - Pink Sweat$ - Vocal and acoustic guitar cover Ft. Renee Foy</a>
       </p>
-      <p className="copyright">© all rights reserved by NgantenStory.</p>
+      <p className="copyright">© all rights reserved by keyraCo.</p>
     </footer>
   );
 }

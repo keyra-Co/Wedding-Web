@@ -8,7 +8,7 @@ export default function Hero({ isOpen }) {
       <div className="hero__wrapper">
         <h2 className={`hero__sub-title ${isOpen ? 'grow' : ''}`}>The Wedding of</h2>
         <HeroTitle isOpen={isOpen} />
-        <h3 className={`hero__date ${isOpen ? 'grow' : ''}`}>10 Oktober 2025</h3>
+        <h3 className={`hero__date ${isOpen ? 'grow' : ''}`}>25 Desember 2024</h3>
       </div>
     </section>
   );
