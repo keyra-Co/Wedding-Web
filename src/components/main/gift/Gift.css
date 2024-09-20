@@ -2,7 +2,7 @@
     background-color: var(--clr-softGray);
     background-size: cover;
     background-position: top;
-    background-image: url('decorations/tulip-flower.svg');
+    background-image: url('/decorations/tulip-flower.svg');
 }
 
 .gift__wrapper {
