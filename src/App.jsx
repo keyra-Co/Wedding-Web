@@ -29,9 +29,6 @@ function App() {
   const [isLoading, setIsloading] = useState(true);
 
   useEffect(() => {
-    window.onload = () => {
-      setIsloading(false);
-    };
 
     const timeout = setTimeout(() => {
       setIsloading(false);
