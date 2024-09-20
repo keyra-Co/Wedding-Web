@@ -179,21 +179,3 @@
         transform: translateX(0);
     }
 }
-
-/* Change Color */
-.changeColor {
-    animation: changeColor linear;
-    animation-timeline: view(75%, 10%);
-}
-
-@keyframes changeColor {
-    from {
-        color: var(--clr-navyBlue) !important;
-        background-color: var(--clr-softGray) !important;
-    }
-
-    to {
-        color: pink !important;
-        background-color: crimson !important;
-    }
-}

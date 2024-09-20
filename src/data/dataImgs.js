@@ -1,18 +1,18 @@
 export const dataImgLS = [
-  { image: '3LS.jpg', name: 'images 1' },
-  { image: '1LS.jpg', name: 'images 2' },
-  { image: '2LS.jpg', name: 'images 3' },
+  { imageLg: '3LS.jpg', imageSm: '3LS400.jpg', name: 'images 1' },
+  { imageLg: '1LS.jpg', imageSm: '1LS400.jpg', name: 'images 2' },
+  { imageLg: '2LS.jpg', imageSm: '2LS400.jpg', name: 'images 3' },
 ];
 
 export const dataImgPT = [
-  { image: '1PT.jpg', name: 'images 1' },
-  { image: '2PT.jpg', name: 'images 2' },
-  { image: '3PT.jpg', name: 'images 3' },
-  { image: '4PT.jpg', name: 'images 4' },
-  { image: '5PT.jpg', name: 'images 5' },
-  { image: '6PT.jpg', name: 'images 6' },
-  { image: '7PT.jpg', name: 'images 7' },
-  { image: '8PT.jpg', name: 'images 8' },
-  { image: '9PT.jpg', name: 'images 9' },
-  { image: '10PT.jpg', name: 'images 10' },
+  { imageLg: '1PT.jpg', imageSm: '1PT400.jpg', name: 'images 1' },
+  { imageLg: '2PT.jpg', imageSm: '2PT400.jpg', name: 'images 2' },
+  { imageLg: '3PT.jpg', imageSm: '3PT400.jpg', name: 'images 3' },
+  { imageLg: '4PT.jpg', imageSm: '4PT400.jpg', name: 'images 4' },
+  { imageLg: '5PT.jpg', imageSm: '5PT400.jpg', name: 'images 5' },
+  { imageLg: '6PT.jpg', imageSm: '6PT400.jpg', name: 'images 6' },
+  { imageLg: '7PT.jpg', imageSm: '7PT400.jpg', name: 'images 7' },
+  { imageLg: '8PT.jpg', imageSm: '8PT400.jpg', name: 'images 8' },
+  { imageLg: '9PT.jpg', imageSm: '9PT400.jpg', name: 'images 9' },
+  { imageLg: '10PT.jpg', imageSm: '10PT400.jpg', name: 'images 10' },
 ];
