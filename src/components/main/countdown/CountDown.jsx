@@ -30,7 +30,7 @@ export default function CountDown() {
 function CountDownItem({ time, name }) {
   return (
     <div className="countDown__item autoLeftScroll">
-      <div className="countDown__time">{time}</div>
+      <div className="countDown__time third-title">{time}</div>
       <div className="countDown__time-name">{name}</div>
     </div>
   );

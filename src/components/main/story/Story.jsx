@@ -19,7 +19,7 @@ function StoryItem({ position, year, story }) {
     <div className={`story__item ${position} autoDownScroll fast`}>
       <h4 className="story__year">{year}</h4>
       <p className="story__description">{story}</p>
-      <span className="love">
+      <span className="love changeColor">
         <i className="bi bi-heart-fill"></i>
       </span>
     </div>

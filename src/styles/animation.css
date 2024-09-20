@@ -1,5 +1,9 @@
 /* Grow Blur Animation */
 .growBlur {
+    animation: growBlur 1s forwards ease-in .5s;
+}
+
+.grow {
     animation: growBlur 1s forwards ease-in;
 }
 
@@ -14,23 +18,6 @@
         transform: scale(1);
         opacity: 1;
         filter: blur(0);
-    }
-}
-
-/* Grow Animation */
-.grow {
-    animation: grow 1s forwards ease-in;
-}
-
-@keyframes grow {
-    from {
-        transform: scale(.5);
-        opacity: 0;
-    }
-
-    to {
-        transform: scale(1);
-        opacity: 1;
     }
 }
 
@@ -149,7 +136,7 @@
     }
 
     to {
-        height: 87%;
+        height: 70%;
     }
 }
 
@@ -179,16 +166,34 @@
 }
 
 .hidden.show:nth-child(2) {
-    animation-delay: .4s;
+    animation-delay: .6s;
 }
 
 .hidden.show:nth-child(3) {
-    animation-delay: .6s;
+    animation-delay: 1s;
 }
 
 @keyframes showIn {
     to {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+/* Change Color */
+.changeColor {
+    animation: changeColor linear;
+    animation-timeline: view(75%, 10%);
+}
+
+@keyframes changeColor {
+    from {
+        color: var(--clr-navyBlue) !important;
+        background-color: var(--clr-softGray) !important;
+    }
+
+    to {
+        color: pink !important;
+        background-color: crimson !important;
     }
 }

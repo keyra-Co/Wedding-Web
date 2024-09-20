@@ -11,8 +11,7 @@
     margin-bottom: var(--size-3xl);
 }
 
-.paragraph {
-    font-size: var(--size-base);
+.paragraph.proposition {
     font-family: "Lora", system-ui;
 }
 
@@ -71,10 +70,6 @@
 
     .border {
         padding: var(--size-4xl) var(--size-2xl);
-    }
-
-    .paragraph {
-        font-size: var(--size-lg);
     }
 
     .surah {

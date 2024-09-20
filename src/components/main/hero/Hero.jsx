@@ -16,7 +16,7 @@ export default function Hero({ isOpen }) {
 
 function HeroTitle({ isOpen }) {
   return (
-    <h1 className={`hero__title ${isOpen ? 'growBlur' : ''}`}>
+    <h1 className={`hero__title ${isOpen ? 'grow' : ''}`}>
       <span className="hero__male">
         <span className="dark-text">pern</span>ama
       </span>

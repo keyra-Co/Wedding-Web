@@ -22,8 +22,8 @@ function GallerySlider() {
   const { currentIndex } = useImgSlider(images);
 
   return (
-    <div className="gallery__main-slider">
-      <div ref={setRef} className="gallery__main-wrapper hidden" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+    <div ref={setRef} className="gallery__main-slider hidden">
+      <div className="gallery__main-wrapper" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {images}
       </div>
     </div>

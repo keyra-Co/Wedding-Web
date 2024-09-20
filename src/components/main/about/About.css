@@ -25,7 +25,6 @@
 .couple__img {
     mask-image: url('/decorations/asset (2).svg');
     mask-size: cover;
-    mask-repeat: no-repeat;
     mask-position: center;
     object-fit: cover;
     object-position: top;

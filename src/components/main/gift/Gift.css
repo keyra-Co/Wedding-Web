@@ -67,10 +67,6 @@
         height: var(--size-10xl);
     }
 
-    .second-title {
-        font-size: var(--size-4xl);
-    }
-
     .gift__detail {
         gap: var(--size-2xl);
         padding: var(--size-2xl);

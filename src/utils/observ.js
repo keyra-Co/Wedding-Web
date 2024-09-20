@@ -1,16 +1,17 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useRef, memo } from 'react';
 
 export const useAnimate = () => {
-  const elRefs = useRef([]);
+  const elRefs = useRef(new Set()); // Gunakan Set untuk menghindari duplikasi
 
   useEffect(() => {
-    const observers = [];
-
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('show');
           observer.unobserve(entry.target); // Hentikan pengamatan
+        } else {
+          entry.target.classList.remove('show');
         }
       });
     });
@@ -18,7 +19,6 @@ export const useAnimate = () => {
     elRefs.current.forEach((element) => {
       if (element) {
         observer.observe(element);
-        observers.push(observer);
       }
     });
 
@@ -32,7 +32,9 @@ export const useAnimate = () => {
   }, []);
 
   return (ref) => {
-    elRefs.current.push(ref); // Tambahkan referensi elemen ke array
+    if (ref && !elRefs.current.has(ref)) {
+      elRefs.current.add(ref); // Tambahkan elemen ke Set jika belum ada
+    }
   };
 };
 

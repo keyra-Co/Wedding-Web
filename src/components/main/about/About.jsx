@@ -1,17 +1,23 @@
 /* eslint-disable react/prop-types */
 import './About.css';
 
+import { useAnimate } from '../../../utils/observ';
+
 export default function About() {
+  const setRef = useAnimate();
+
   return (
     <section className="about section">
       <div className="about__couple">
-        <Couple className="autoLeftScroll fast" image={'Female.jpg'}>
+        <Couple className="autoLeftScroll normal" image={'Female.jpg'}>
           <CoupleName firstName={'Wulan'} lastName={'Duanita'} />
           <ParentsCp bapak={'Setia Budi'} ibu={'Susi Marya'} anak={'Putri'} />
           <Insta>Wlandnt</Insta>
         </Couple>
-        <span className="ampersand autoAppearScroll">&</span>
-        <Couple className="autoLeftScroll veryfast" image={'Male.jpg'}>
+        <span ref={setRef} className="ampersand hidden">
+          &
+        </span>
+        <Couple className="autoLeftScroll fast" image={'Male.jpg'}>
           <CoupleName firstName={'Pernama'} lastName={'Pratama'} />
           <ParentsCp bapak={'Muda Bakti'} ibu={'Elis Siswanti'} anak={'Putra'} />
           <Insta>Prnmprt</Insta>
@@ -21,10 +27,12 @@ export default function About() {
   );
 }
 
-function Couple({ children, image, className }) {
+function Couple({ children, image }) {
+  const setRef = useAnimate();
+
   return (
-    <div className={`couple ${className}`}>
-      <img src={`images/${image}`} alt={image} className="couple__img autoAppearScroll normal" />
+    <div ref={setRef} className="couple hidden">
+      <img src={`images/${image}`} alt={image} className="couple__img autoAppearScroll" />
       <div className="couple__description autoLeftScroll">{children}</div>
     </div>
   );

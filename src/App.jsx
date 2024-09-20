@@ -7,37 +7,24 @@ import './styles/animation.css';
 import Header from './components/header/Header';
 import Main from './components/main/Main';
 import Footer from './components/footer/Footer';
-import { Modal } from './components/modal/Modal';
+import Modal from './components/modal/Modal';
 import Audio from './components/audiocompt/Audio';
 
 // Hooks
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { useToggle } from './utils/useToggle';
-
-// Data
-import { dataReceiver1 } from './data/dataReceiver';
+import { useAudio } from './utils/useAudio';
 
 function App() {
   const { toggle, handleToggle } = useToggle();
-  const [data, setData] = useState(dataReceiver1);
+  const [data, setData] = useState('');
+  console.log(data);
+  const { audioRef, togglePlay, isPlaying } = useAudio();
 
   useEffect(() => {
     toggle && document.body.classList.remove('no-scroll');
     window.scrollTo(0, 0);
   }, [toggle]); // Efek hanya dijalankan saat navOpen berubah
-
-  const [isPlaying, setIsPlaying] = useState(false); // State untuk play/pause
-  const audioRef = useRef(null); // Reference ke elemen audio
-
-  // Fungsi untuk toggle play/pause
-  const togglePlay = () => {
-    if (isPlaying) {
-      audioRef.current.pause(); // Pause audio
-    } else {
-      audioRef.current.play(); // Play audio
-    }
-    setIsPlaying(!isPlaying); // Ubah state
-  };
 
   return (
     <>

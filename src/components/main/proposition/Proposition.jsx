@@ -13,8 +13,8 @@ export default function Proposition() {
 
 function Border() {
   return (
-    <div className="border autoAppearScroll">
-      <p className="paragraph autoLeftScroll">
+    <div className="border autoDownScroll">
+      <p className="paragraph proposition">
         “Dan di antara tanda-tanda kekuasaan Allah ialah diciptakan-Nya untukmu pasangan hidup dari jenismu sendiri supaya kamu merasa tentram di
         samping-Nya dan dijadikan-Nya rasa kasih sayang di antara kamu. Sesungguhnya yang demikian itu menjadi bukti kekuasaan Allah bagi kaum yang
         berfikir.“

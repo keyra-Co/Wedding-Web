@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-export function Modal({ data }) {
+export default function Modal({ data }) {
   return (
     <div
       className="modal fade"
@@ -10,17 +10,17 @@ export function Modal({ data }) {
       aria-labelledby="staticBackdropLabel"
       aria-hidden="true"
     >
-      <div className="modal-dialog">
+      <div className="modal-dialog modal-dialog-centered modal-lg">
         <div className="modal-content">
           <div className="modal-header">
-            <h3 className="modal-title fs-5" id="staticBackdropLabel">
+            <h3 className="modal-title fs-4 fw-bold" id="staticBackdropLabel">
               {data.info}
             </h3>
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div className="modal-body">
-            <div className="modal__receiver">{data.receiver}</div>
-            <div className="modal__tujuan">{data.tujuan}</div>
+          <div className="modal-body text-center">
+            <div className="modal__receiver fw-bolder fs-5">{data.receiver}</div>
+            <div className="modal__tujuan fs-6">{data.tujuan}</div>
             <div className="modal__desc">{data.desc}</div>
           </div>
           <div className="modal-footer">

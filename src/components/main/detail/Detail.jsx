@@ -4,7 +4,7 @@ import './Detail.css';
 export default function Detail() {
   return (
     <section className="detail section">
-      <div className="detail__wedding autoDownScroll fast">
+      <div className="detail__wedding autoDownScroll normal">
         <h2 className="detail__wedding-date second-title">Minggu, 25 Desember 2024</h2>
         <DetailEvent />
       </div>
@@ -32,8 +32,8 @@ function DetailEvent() {
 function DetailInfo({ title, children }) {
   return (
     <div className="detail__wedding-item">
-      <div className="detail__wedding-event">{title}</div>
-      <div className="detail__wedding-description">{children}</div>
+      <div className="detail__wedding-event third-title">{title}</div>
+      <div className="detail__wedding-description paragraph">{children}</div>
     </div>
   );
 }

@@ -34,14 +34,12 @@
 
 .detail__wedding-date,
 .detail__wedding-event {
-    font-size: var(--size-xl);
     color: var(--clr-navyBlueDark);
     font-family: "Playfair Display", system-ui;
     font-weight: bold;
 }
 
 .detail__wedding-date {
-    font-size: var(--size-2xl);
     padding: var(--size-xxs);
     display: flex;
     text-align: center;
@@ -76,13 +74,7 @@
         padding: var(--size-lg) 0;
     }
 
-    .detail__wedding-date,
-    .detail__wedding-event {
-        font-size: var(--size-xl);
-    }
-
     .detail__wedding-date {
-        font-size: var(--size-3xl);
         padding: var(--size-xxs);
     }
 
@@ -105,13 +97,7 @@
         padding: var(--size-4xl) var(--size-10xl);
     }
 
-    .detail__wedding-date,
-    .detail__wedding-event {
-        font-size: var(--size-2xl);
-    }
-
     .detail__wedding-date {
-        font-size: var(--size-4xl);
         padding: var(--size-xxs);
     }
 

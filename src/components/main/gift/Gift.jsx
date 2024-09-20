@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
-import { dataReceiver1, dataReceiver2 } from '../../../data/dataReceiver';
 import './Gift.css';
+import { dataReceiver1, dataReceiver2 } from '../../../data/dataReceiver';
+import { useAnimate } from '../../../utils/observ';
 
 export default function Gift({ onBtn }) {
   return (
@@ -30,26 +31,26 @@ function GiftDetail({ children }) {
 function ButtonWrapper({ onBtn }) {
   return (
     <div className="gift__btn-wrapper">
-      <button
-        onClick={() => onBtn(dataReceiver1)}
-        data-bs-toggle="modal"
-        data-bs-target="#staticBackdrop"
-        type="button"
-        className="button-main btnw gift__btn autoLeftScroll"
-      >
-        <i className="bi bi-gift me-2"></i>
-        Kirim Hadiah
-      </button>
-      <button
-        onClick={() => onBtn(dataReceiver2)}
-        data-bs-toggle="modal"
-        data-bs-target="#staticBackdrop"
-        type="button"
-        className="button-main btnw gift__btn autoLeftScroll"
-      >
-        <i className="bi bi-credit-card me-2"></i>
-        Transfer Bank
-      </button>
+      <ButtonGift onClick={() => onBtn(dataReceiver1)} cls="bi-gift" text="Kirim Hadiah" />
+      <ButtonGift onClick={() => onBtn(dataReceiver2)} cls="bi-credit-card" text="Transfer Bank" />
     </div>
+  );
+}
+
+function ButtonGift({ onClick, cls, text }) {
+  const setRef = useAnimate();
+
+  return (
+    <button
+      ref={setRef}
+      onClick={onClick}
+      data-bs-toggle="modal"
+      data-bs-target="#staticBackdrop"
+      type="button"
+      className="button-main btnw gift__btn hidden"
+    >
+      <i className={`bi ${cls} me-2`}></i>
+      {text}
+    </button>
   );
 }
