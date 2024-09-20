@@ -4,7 +4,7 @@ import './Header.css';
 export default function Header({ isOpen, onOpen, onPlay }) {
   return (
     <header className={`header ${isOpen ? 'hide' : ''}`}>
-      <img className="header__bg-img" src="/images/12PT.jpg" />
+      <img className="header__bg-img" src="images/12PT.jpg" />
       <HeaderHead />
       <HeaderBody onOpen={onOpen} onPlay={onPlay} />
     </header>

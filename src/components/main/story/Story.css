@@ -42,17 +42,20 @@
 }
 
 .love.changeColor {
-    animation: changeColor linear;
-    animation-timeline: view(60% 5%);
+    animation: changeColor linear forwards;
+    animation-timeline: view(70% 0%);
 }
 
 @keyframes changeColor {
-    from {
+
+    0%,
+    70% {
         color: var(--clr-navyBlue);
         background-color: var(--clr-softGray);
     }
 
-    to {
+    75%,
+    100% {
         color: pink;
         background-color: crimson;
     }

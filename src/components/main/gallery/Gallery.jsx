@@ -41,6 +41,6 @@ function GallerySlide() {
   );
 }
 
-function ImageMainItem({ image, name }) {
-  return <img src={`images/${image}`} alt={name} className="gallery__image-item" />;
+function ImageMainItem({ imageLg, name }) {
+  return <img src={`images/${imageLg}`} alt={name} className="gallery__image-item" />;
 }
