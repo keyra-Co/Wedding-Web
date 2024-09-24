@@ -38,13 +38,13 @@
 
 .header__greet {
     font-size: var(--size-xl);
-    text-shadow: 1px 1px 1px var(--clr-softDark);
     letter-spacing: -.5px;
+    font-family: "Quicksand", sans-serif;
 }
 
 .header__guest {
     font-size: var(--size-2xl);
-    font-weight: normal;
+    margin: 0;
 }
 
 .header__body {
@@ -52,13 +52,13 @@
 }
 
 .header__title {
-    font-size: var(--size-4xl);
-    font-family: "Playfair Display SC", system-ui;
+    font-size: var(--size-5xl);
+    font-family: "Great Vibes", cursive;
+    margin-bottom: var(--size-base);
 }
 
 .header__btn-invite {
     background-color: rgba(244, 244, 244, .9);
-    margin-top: var(--size-xl);
     position: relative;
 }
 

@@ -49,7 +49,7 @@ function CoupleName({ firstName, lastName }) {
 function ParentsCp({ bapak, ibu, anak }) {
   return (
     <div className="couple__parents">
-      <span>{anak} dari</span>
+      <span className="couple__fm">{anak} dari</span>
       <span className="couple__father">Bpk. {bapak}</span>
       <span className="couple__mother">& Ibu. {ibu}</span>
     </div>

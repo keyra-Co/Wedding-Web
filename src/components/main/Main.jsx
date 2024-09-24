@@ -20,11 +20,11 @@ export default function Main({ isOpen, onBtn }) {
       <Hero isOpen={isOpen} />
       <Proposition />
       <About />
-      <Story />
       <Detail />
       <CountDown />
-      <Gift onBtn={onBtn} />
+      <Story />
       <Gallery />
+      <Gift onBtn={onBtn} />
       <Comment />
       <Ending />
     </main>

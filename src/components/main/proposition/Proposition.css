@@ -8,16 +8,17 @@
 .border {
     padding: var(--size-2xl) var(--size-xl);
     color: var(--clr-softGray);
+    border-radius: 10px;
     margin-bottom: var(--size-3xl);
 }
 
 .paragraph.proposition {
-    font-family: "Lora", system-ui;
+    font-family: "Quicksand", sans-serif;
 }
 
 .surah {
     font-size: var(--size-lg);
-    font-weight: bolder;
+    font-family: "Roboto Slab", serif;
 }
 
 .pictures {
@@ -36,6 +37,7 @@
     width: 100%;
     height: 100%;
     object-position: top;
+    border-radius: 10px;
 }
 
 

@@ -4,7 +4,7 @@ import './Hero.css';
 export default function Hero({ isOpen }) {
   return (
     <section className="hero">
-      <img className="hero__bg-img" src="images/3LS.jpg" alt="wedding bg hero" />
+      <img className="hero__bg-img" src="images/1LS.jpg" alt="wedding bg hero" />
       <div className="hero__wrapper">
         <h2 className={`hero__sub-title ${isOpen ? 'grow' : ''}`}>The Wedding of</h2>
         <HeroTitle isOpen={isOpen} />
@@ -17,13 +17,9 @@ export default function Hero({ isOpen }) {
 function HeroTitle({ isOpen }) {
   return (
     <h1 className={`hero__title ${isOpen ? 'grow' : ''}`}>
-      <span className="hero__male">
-        <span className="dark-text">pern</span>ama
-      </span>
+      <span className="hero__male">pernama</span>
       <span className="hero__ampersan">&</span>
-      <span className="hero__female">
-        <span className="dark-text">Wu</span>lan
-      </span>
+      <span className="hero__female">Wulan</span>
     </h1>
   );
 }
