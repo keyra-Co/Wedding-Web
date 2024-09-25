@@ -1,0 +1,33 @@
+/* Audio */
+.audio-icon {
+    position: fixed;
+    bottom: var(--size-xl);
+    right: var(--size-xl);
+    width: var(--size-3xl);
+    height: var(--size-3xl);
+    z-index: 9;
+    font-size: var(--size-2xl);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.audio-icon i {
+    display: flex;
+    position: relative;
+}
+
+.audio-icon i.bi-vinyl-fill::after {
+    content: '';
+    position: absolute;
+    border: 1px solid white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: growShrink 1s linear infinite;
+}

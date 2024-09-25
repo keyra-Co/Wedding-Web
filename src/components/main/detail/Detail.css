@@ -37,7 +37,6 @@
     color: var(--clr-navyBlueDark);
     font-family: "Dancing Script", cursive;
     font-weight: bold;
-    font-size: var(--size-3xl);
 }
 
 .detail__wedding-date {

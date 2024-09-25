@@ -12,15 +12,6 @@
     margin-bottom: var(--size-3xl);
 }
 
-.paragraph.proposition {
-    font-family: "Quicksand", sans-serif;
-}
-
-.surah {
-    font-size: var(--size-lg);
-    font-family: "Roboto Slab", serif;
-}
-
 .pictures {
     display: grid;
     gap: 10px;
@@ -72,10 +63,6 @@
 
     .border {
         padding: var(--size-4xl) var(--size-2xl);
-    }
-
-    .surah {
-        font-size: var(--size-xl);
     }
 
     .pictures__item {

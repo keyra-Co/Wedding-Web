@@ -19,7 +19,7 @@ function Border() {
         samping-Nya dan dijadikan-Nya rasa kasih sayang di antara kamu. Sesungguhnya yang demikian itu menjadi bukti kekuasaan Allah bagi kaum yang
         berfikir.“
       </p>
-      <span className="surah">(QS. Ar- Rum 21)</span>
+      <span className="surah fourth-title">(QS. Ar- Rum 21)</span>
     </div>
   );
 }

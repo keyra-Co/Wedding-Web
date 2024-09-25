@@ -21,7 +21,7 @@
 .story__title {
     margin-bottom: var(--size-6xl);
     background-color: var(--clr-softLight);
-    font-size: var(--size-4xl);
+    text-align: center;
 }
 
 .story__item {

@@ -19,12 +19,6 @@
     animation: hide 1s linear forwards;
 }
 
-@keyframes hide {
-    to {
-        transform: translateY(-100%);
-        display: none;
-    }
-}
 
 .header__bg-img {
     position: absolute;

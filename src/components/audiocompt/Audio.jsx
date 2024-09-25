@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import './Audio.css';
 // Audio
 import backgroundOpus from '../../assets/audio/videoplayback.opus';
 import backgroundMp3 from '../../assets/audio/lether.mp3';

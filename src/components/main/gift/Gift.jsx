@@ -20,7 +20,7 @@ export default function Gift({ onBtn }) {
 function GiftDetail({ children }) {
   return (
     <div className="gift__detail">
-      <p className="gift__description autoAppearScroll">
+      <p className="gift__description autoAppearScroll fourth-title">
         Bagi keluarga dan sahabat yang ingin mengirimkan hadiah, silakan mengirimkannya melalui tautan berikut:
       </p>
       {children}

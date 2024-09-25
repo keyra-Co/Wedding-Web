@@ -179,3 +179,23 @@
         transform: translateX(0);
     }
 }
+
+@keyframes growShrink {
+    from {
+        width: var(--size-3xl);
+        height: var(--size-3xl);
+    }
+
+    to {
+        width: calc(var(--size-5xl) - 5px);
+        height: calc(var(--size-5xl) - 5px);
+    }
+}
+
+
+@keyframes hide {
+    to {
+        transform: translateY(-100%);
+        display: none;
+    }
+}

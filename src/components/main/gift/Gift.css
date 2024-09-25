@@ -32,7 +32,6 @@
     text-align: center;
     padding: 0 var(--size-xl);
     font-family: "Dancing Script";
-    font-size: var(--size-xl);
 }
 
 .gift__btn {
@@ -72,7 +71,6 @@
     .gift__detail {
         gap: var(--size-2xl);
         padding: var(--size-2xl);
-        font-size: var(--size-2xl);
     }
 
 }

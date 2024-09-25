@@ -12,6 +12,7 @@
 .gallery-title {
     color: var(--clr-navyBlueDark);
     margin-bottom: var(--size-4xl);
+    text-align: center;
 }
 
 .gallery__image-item {

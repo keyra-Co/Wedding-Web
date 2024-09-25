@@ -5,7 +5,7 @@ export default function Detail() {
   return (
     <section className="detail section">
       <div className="detail__wedding autoDownScroll normal">
-        <h2 className="detail__wedding-date second-title">Minggu, 25 Desember 2024</h2>
+        <h2 className="detail__wedding-date third-title">Minggu, 25 Desember 2024</h2>
         <DetailEvent />
       </div>
     </section>
