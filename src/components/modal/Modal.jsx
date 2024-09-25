@@ -2,6 +2,9 @@
 import './Modal.css';
 
 export default function Modal({ data }) {
+  function copyText() {
+    navigator.clipboard.writeText(data.desc);
+  }
   return (
     <div
       className="modal fade"
@@ -29,7 +32,7 @@ export default function Modal({ data }) {
             <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">
               Close
             </button>
-            <button type="button" className="btn btn-primary">
+            <button onClick={copyText} type="button" className="btn btn-primary">
               {data.btn}
             </button>
           </div>

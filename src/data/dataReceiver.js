@@ -8,8 +8,8 @@ export const dataReceiver1 = {
 
 export const dataReceiver2 = {
   receiver: 'Wulan Duanita',
-  desc: '',
-  tujuan: '65729903028',
+  desc: '65729903028',
+  tujuan: '',
   info: 'Nomor Rekening',
   btn: 'Copy No Rek',
 };

@@ -4,6 +4,10 @@
     background-color: var(--clr-navyBlue);
     font-size: var(--size-xs);
     padding: var(--size-lg) 0;
+    font-family: "Quicksand", cursive;
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-lg);
 }
 
 .footer a {
@@ -17,20 +21,35 @@
 }
 
 .creator {
-    font-size: var(--size-lg);
-    font-family: 'Lora', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: var(--size-base);
+    margin: 0;
+}
+
+.footer__creator a {
+    font-size: var(--size-3xl);
+    font-family: "Dancing Script";
 }
 
 .footer .bi-instagram {
-    font-size: var(--size-4xl);
+    font-size: var(--size-xl);
     margin: -5px 0 5px;
     display: inline-block;
 }
 
-.copyright-song {
-    margin: 0;
+.ig-account {
+    display: flex;
+    gap: 5px;
+    font-size: var(--size-xl);
+    width: fit-content;
+    align-items: center;
+    margin: auto;
 }
 
-.copyright {
-    margin-top: 10px;
+.copyright-song {
+    margin: 0;
+    font-size: var(--size-sm);
+}
+
+.copyright-song a {
+    font-family: "Robot Slab";
 }
