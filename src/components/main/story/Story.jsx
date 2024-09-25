@@ -17,8 +17,8 @@ export default function Story() {
 function StoryItem({ position, year, story }) {
   return (
     <div className={`story__item ${position} autoDownScroll fast`}>
-      <h4 className="story__year">{year}</h4>
-      <p className="story__description">{story}</p>
+      <h4 className="story__year third-title">{year}</h4>
+      <p className="story__description paragraph">{story}</p>
       <span className="love changeColor">
         <i className="bi bi-heart-fill"></i>
       </span>

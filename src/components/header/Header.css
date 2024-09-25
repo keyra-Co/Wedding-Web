@@ -60,6 +60,7 @@
 .header__btn-invite {
     background-color: rgba(244, 244, 244, .9);
     position: relative;
+    font-family: "Poppins", sans-serif;
 }
 
 .header__btn-invite:hover {

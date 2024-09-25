@@ -34,6 +34,7 @@
 
 .countDown__time-name {
     font-size: var(--size-xs);
+    font-family: 'Great Vibes', cursive;
 }
 
 /* xs */
