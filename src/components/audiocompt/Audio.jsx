@@ -7,7 +7,7 @@ import backgroundMp3 from '../../assets/audio/lether.mp3';
 export default function Audio({ audioRef, onPlay, isPlaying }) {
   return (
     <div onClick={onPlay} className="audio-icon">
-      <i className={`bi ${isPlaying ? 'bi-vinyl-fill autoRotate' : 'bi-stop-circle-fill'}`}></i>
+      <img className={`audio-disc ${isPlaying ? 'autoRotate' : ''}`} src="decorations/vinyl-record.png" alt="disc-audio" />
       <audio ref={audioRef} loop>
         <source src={backgroundOpus} type="audio/ogg" />
         <source src={backgroundMp3} type="audio/mpeg" />

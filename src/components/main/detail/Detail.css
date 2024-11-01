@@ -8,7 +8,6 @@
     border-radius: 10px;
     box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, .3);
     text-transform: capitalize;
-    backdrop-filter: blur(5px);
     background-color: rgba(255, 255, 255, .5);
 }
 
@@ -61,9 +60,6 @@
     background-position: center;
 }
 
-/* xs */
-/* @media (min-width : 475px) {} */
-
 /* sm */
 @media (min-width : 640px) {
     .detail {
@@ -88,9 +84,6 @@
     }
 }
 
-/* md */
-/* @media (min-width : 768px) {} */
-
 /* lg */
 @media (min-width : 1024px) {
     .detail {
@@ -110,6 +103,3 @@
         height: var(--size-7xl);
     }
 }
-
-/* xl */
-/* @media (min-width : 1280px) {} */
