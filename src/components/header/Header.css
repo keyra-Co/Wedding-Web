@@ -58,7 +58,7 @@
 }
 
 .header__btn-invite:hover {
-    background-color: #3A506B;
+    background-color: var(--clr-navyBlue);
     color: var(--clr-softLight);
 }
 

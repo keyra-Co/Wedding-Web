@@ -19,13 +19,14 @@
     display: grid;
     grid-template-columns: repeat(4, minmax(50px, 1fr));
     gap: var(--size-xl);
+    padding: 0 var(--size-lg);
 }
 
 .countDown__item {
     background-color: var(--clr-navyBlue);
-    padding: var(--size-4xl);
-    width: var(--size-4xl);
-    height: var(--size-4xl);
+    padding: var(--size-3xl);
+    width: var(--size-3xl);
+    height: var(--size-3xl);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,5 +61,11 @@
 @media (min-width : 1024px) {
     .countDown__item-wrapper {
         gap: var(--size-4xl);
+    }
+
+    .countDown__item {
+        padding: var(--size-3xl);
+        width: var(--size-9xl);
+        height: var(--size-9xl);
     }
 }

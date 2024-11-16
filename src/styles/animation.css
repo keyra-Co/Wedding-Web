@@ -164,7 +164,7 @@
 
 
 svg path.show {
-    animation: textAnimation 2.5s ease-in-out forwards;
+    animation: textAnimation 2.5s .5s ease-in-out forwards;
 }
 
 

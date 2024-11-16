@@ -2,7 +2,6 @@
 import './Gallery.css';
 
 import { dataImgLS, dataImgPT } from '../../../data/dataImgs';
-import { useImgSlider } from '../../../utils/sliderImg';
 import { useAnimate } from '../../../utils/observ';
 
 export default function Gallery() {
@@ -19,13 +18,10 @@ function GallerySlider() {
   const setRef = useAnimate();
 
   const images = dataImgLS.map((image) => <ImageMainItem key={image.name} {...image} />);
-  const { currentIndex } = useImgSlider(images);
 
   return (
     <div ref={setRef} className="gallery__main-slider hidden">
-      <div className="gallery__main-wrapper" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-        {images}
-      </div>
+      <div className="gallery__main-wrapper">{images}</div>
     </div>
   );
 }
