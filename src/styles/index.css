@@ -1,14 +1,15 @@
 :root {
   --clr-dark: #070a13;
+  --clr-darkCalm: #1f222c;
   --clr-light: #f1f5f9;
-  --clr-calmBlue: #A0D2EB;
+  --clr-calmBlue: #8f9396;
   --clr-softLight: #F4F4F4;
   --clr-softGray: #D3D3D3;
   --clr-silver: #BFC1C2;
-  --clr-navyBlue: #3A506B;
-  --clr-navyBlueDark: #334459;
-  --clr-softDark: #323232;
-  --clr-verySoftDark: #5d5d5d;
+  --clr-navyBlue: #424649;
+  --clr-navyBlueDark: #2d3037;
+  --clr-softDark: #4a4b4f;
+  --clr-verySoftDark: #5c5d5f;
   /* sizes */
   --size-xxs: 0.5rem;
   --size-xs: 0.75rem;

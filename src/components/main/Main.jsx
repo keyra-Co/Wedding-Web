@@ -8,7 +8,7 @@ import Detail from './detail/Detail';
 import CountDown from './countdown/CountDown';
 import Gift from './gift/Gift';
 import Gallery from './gallery/gallery';
-import Comment from './comment/Comment';
+import Comments from './comment/Comment';
 import Ending from './ending/Ending';
 
 // Style
@@ -25,7 +25,7 @@ export default function Main({ isOpen, onBtn }) {
       <Story />
       <Gallery />
       <Gift onBtn={onBtn} />
-      <Comment />
+      <Comments />
       <Ending />
     </main>
   );

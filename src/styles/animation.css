@@ -142,7 +142,7 @@
 
 /* Rotating */
 .autoRotate {
-    animation: rotate 1s linear infinite;
+    animation: rotate 2s linear infinite;
 }
 
 @keyframes rotate {
@@ -159,6 +159,28 @@
 
 .hidden.show {
     animation: showIn forwards 1s ease-in 1s;
+}
+
+
+
+svg path.show {
+    animation: textAnimation 2.5s ease-in-out forwards;
+}
+
+
+@keyframes textAnimation {
+    0% {
+        stroke-dashoffset: 400;
+    }
+
+    90% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: var(--clr-dark);
+        stroke-dashoffset: 0;
+    }
 }
 
 .hidden.show:nth-child(1) {

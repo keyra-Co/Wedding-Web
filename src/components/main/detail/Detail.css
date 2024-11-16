@@ -1,63 +1,52 @@
 .detail {
-    background-image: url('/images/6PT.jpg');
+    background-image: url('/images/5PT.jpg');
     background-size: cover;
     background-position: center;
+    gap: var(--size-4xl);
+    display: grid;
 }
 
-.detail__wedding {
+.detail__info {
     border-radius: 10px;
-    box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, .3);
-    text-transform: capitalize;
+    box-shadow: 0px 3px 5px 3px rgba(45, 48, 55, .5);
     background-color: rgba(255, 255, 255, .5);
-}
-
-.detail__wedding-info {
+    color: var(--clr-darkCalm);
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: var(--size-lg);
-    padding: var(--size-sm) 0;
-    overflow: hidden;
+    flex-direction: column;
+    backdrop-filter: blur(5px) grayScale(.8);
+    padding: var(--size-xl) var(--size-sm);
 }
 
-.detail__wedding-info a {
+.detail__info a {
     text-decoration: none;
+    width: fit-content;
+    font-family: 'Oleo Script', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.detail__wedding-item {
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.detail__title {
+    font-family: "Playfair Display", system-ui;
+    font-weight: bold;
+    color: var(--clr-dark);
 }
 
-.detail__wedding-date,
-.detail__wedding-event {
-    color: var(--clr-navyBlueDark);
-    font-family: "Dancing Script", cursive;
+.detail__place {
+    font-family: "Oleo Script", system-ui;
     font-weight: bold;
 }
 
-.detail__wedding-date {
-    padding: var(--size-xxs);
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    border-bottom: 1px solid var(--clr-navyBlue);
-    width: 100%;
-}
-
-.detail__wedding-description {
-    color: var(--clr-navyBlue);
-    max-width: 250px;
-    text-align: center;
-}
-
-.detail__icon {
+.detail svg {
     width: var(--size-6xl);
     height: var(--size-6xl);
-    background-size: cover;
-    background-position: center;
+    fill: var(--clr-dark);
+}
+
+.detail svg path {
+    fill: transparent;
+    stroke-width: .5;
+    stroke: black;
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
 }
 
 /* sm */
@@ -66,21 +55,17 @@
         padding: var(--size-4xl) var(--size-8xl);
     }
 
-    .detail__wedding-info {
-        padding: var(--size-lg) 0;
+    .detail__info {
+        padding: var(--size-2xl) var(--size-xl);
     }
 
-    .detail__wedding-date {
+    .detail__date {
         padding: var(--size-xxs);
     }
 
-    .detail__wedding-description {
-        max-width: 300px;
-    }
-
-    .detail__icon {
-        width: var(--size-6xl);
-        height: var(--size-6xl);
+    .detail svg {
+        width: var(--size-7xl);
+        height: var(--size-7xl);
     }
 }
 
@@ -88,18 +73,15 @@
 @media (min-width : 1024px) {
     .detail {
         padding: var(--size-4xl) var(--size-10xl);
+        grid-template-columns: 1fr 1fr;
     }
 
-    .detail__wedding-date {
+    .detail__date {
         padding: var(--size-xxs);
     }
 
-    .detail__wedding-description {
-        max-width: 600px;
-    }
-
-    .detail__icon {
-        width: var(--size-7xl);
-        height: var(--size-7xl);
+    .detail svg {
+        width: var(--size-8xl);
+        height: var(--size-8xl);
     }
 }
